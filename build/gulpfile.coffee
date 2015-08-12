@@ -17,10 +17,11 @@ gulp.task 'coffee', ->
   .on 'error', gutil.log
 
 gulp.task 'jade', ->
-  gulp.src parameters.app_path + '/*.jade'
+  gulp.src parameters.app_path + '/tepmlates/*.jade'
   .pipe jade pretty: true
   .pipe gulp.dest parameters.web_path
-  .on 'error', gutil.log
+  .pipe reload stream: true
+  .on 'error', log
 
 gulp.task 'sass', ->
   gulp.src parameters.styles_main_file
@@ -57,4 +58,12 @@ gulp.task 'watch', ->
 
 gulp.task 'default', ['server', 'watch']
 
+log = (error) ->
+  console.log ['',
+    "----------ERROR MESSAGE START----------",
+    ("[" + error.name + " in " + error.plugin + "]"),
+    error.message,
+    "----------ERROR MESSAGE END----------",
+    '']
+  .join '\n'
 
