@@ -17,13 +17,11 @@ gulp.task 'coffee', ->
   .on 'error', gutil.log
 
 gulp.task 'jade', ->
-  gulp.src parameters.app_path + '/tepmlates/*.jade'
+  gulp.src parameters.app_path + '/templates/**.jade'
   .pipe jade pretty: true
   .on 'error', log
-  .pipe gulp.dest parameters.app_path
+  .pipe gulp.dest parameters.web_path
   .pipe reload stream: true
-
-
 
 gulp.task 'sass', ->
   gulp.src parameters.styles_main_file
