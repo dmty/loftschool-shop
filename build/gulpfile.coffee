@@ -19,9 +19,11 @@ gulp.task 'coffee', ->
 gulp.task 'jade', ->
   gulp.src parameters.app_path + '/tepmlates/*.jade'
   .pipe jade pretty: true
-  .pipe gulp.dest parameters.web_path
-  .pipe reload stream: true
   .on 'error', log
+  .pipe gulp.dest parameters.app_path
+  .pipe reload stream: true
+
+
 
 gulp.task 'sass', ->
   gulp.src parameters.styles_main_file
