@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru-RU")
+	include ../common/head.jade
+	body
+		<!--[if lt IE 7]>
+		<p class="browsehappy">Вы используете устаревший браузер</p>
+		<![endif]-->
+		include ../common/header.jade
+		.container
+			.controls
+				.path 
+				.layout-change Сеткой
+				.page-number 1 2 3 4 5 Все
+			aside.sidebar
+				include ..common/sidemenu.jade
+		
+		include ../common/footer.jade
+
+
