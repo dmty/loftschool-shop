@@ -17,9 +17,9 @@ gulp.task 'coffee', ->
   .on 'error', gutil.log
 
 gulp.task 'jade', ->
-  gulp.src parameters.app_path + '/templates/**.jade'
+  gulp.src parameters.app_path + '/templates/pages/**.jade'
   .pipe jade pretty: true
-  .on 'error', log
+  .on 'error', gutil.log
   .pipe gulp.dest parameters.web_path
   .pipe reload stream: true
 
