@@ -1,13 +1,42 @@
-footer.page-footer
+footer.footer
 	.container
-		.footer-logo
-		ul.footer-menu
-			li О магазине
-			li О нас
-		ul.social
-			li.vk
-			li.fb
-			li.tw
+		.footer__logo
+			img.footer__logo-img
+			span.footer__logo-text Эппл шоп
+		.footer__nav
+			ul.footer__nav-list
+				li.footer__nav-item 
+					.footer__nav-title О магазине
+					ul.footer__nav-list
+						each link in ['О нас','Наши цены','Наши скидки','Акции']
+							li.footer__nav-menu
+								a.footer__nav-link= link
+				li.footer__nav-item 
+					.footer__nav-title Каталог
+					ul.footer__nav-list
+						each link in ['Смартфоны','Планшеты','Компьютеры','Аксессуары']
+							li.footer__nav-menu
+								a.footer__nav-link= link
+				li.footer__nav-item 
+					.footer__nav-title Контакты
+					ul.footer__nav-list
+						each link in ['Телефоны','Адреса','Карта проезда','Обратная связь']
+							li.footer__nav-menu
+								a.footer__nav-link= link
+				
+		.footer__social
+			.footer__shops
+				a.footer__appstore
+				a.footer__googleplay
+			ul.footer_social-list
+				li.footer__social-item
+					a.footer__social-vk
+				li.footer__social-item
+					a.footer__social-fb
+				li.footer__social-item
+					a.footer__social-tw
 
-script(src="bower/jquery/dist/jquery.min.js")
+script(src='//ajax.googleapis.com/ajax/libs/juery/1.11.0/jquery.min.js')
+script.
+	window.jQuery || document.write('<script src="js/vendor/jquery.min.js"')
 script(src="js/main.js")

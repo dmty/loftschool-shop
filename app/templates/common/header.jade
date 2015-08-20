@@ -1,18 +1,9 @@
 header.page-header
 	.container
-		a.logo-link(href="#", alt="AppleShop")
-			img.logo-img(src="img/logo.png")
-		.contacts
-			.phone 
-				sup.code +7 (921) 
-				span.number 322 12 32
-			a.email(href="mailto:manager@company.com") manager@company.com
-		.menu
-			ul.menu-list
-				li.menu-elem Мобильные телефоны
-				li.menu-elem.active Планшеты
-				li.menu-elem Мр3 плееры
-				li.menu-elem Персональные компьютеры
-				li.menu-elem Ноутбуки
-				li.menu-elem Apple TV
-				li.menu-elem Аксессуары	
+		a.header__logo-link(href="#", alt="AppleShop")
+			img.header__logo-img(src="img/logo.png")
+		.header__phone 
+			span.header__code +7 (921) 
+			span.header__number 322 12 32
+		.header__mail
+			a(href="mailto:manager@company.com").header__mail-address manager@company.com

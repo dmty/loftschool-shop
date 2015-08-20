@@ -5,14 +5,12 @@ html(lang="ru-RU")
 		<!--[if lt IE 7]>
 		<p class="browsehappy">Вы используете устаревший браузер</p>
 		<![endif]-->
-		include ../common/header.jade
-		.container
-			.controls
-				.path 
-				.layout-change Сеткой
-				.page-number 1 2 3 4 5 Все
-			aside.sidebar
-				include ../common/sidemenu.jade
+		.wrapper
+			.maincontent
+				include ../common/header.jade
+				include ../common/nav.jade
+		
+				block content
 		
 		include ../common/footer.jade
 

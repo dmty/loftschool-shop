@@ -1,0 +1,11 @@
+- var products = ['iPhone','iPad','iMac','Macbook','iPod','Другое'];
+- var iphones = ['iPhone 4s','iPhone 5','iPhone 5s с эксклюзивным дизайном','iPhone 6','iPhone 6 plus'];
+.sidebar
+	ul.sidebar__list
+		each item in products
+			li.sidebar__item
+				a.sidebar_item-trigger= item
+				ul.sidebar__inner
+					each inner in iphones
+						li.sidebar__inner-item
+							a.sidebar__inner-link= inner
