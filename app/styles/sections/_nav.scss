@@ -1,0 +1,53 @@
+@import '../common/fonts';
+@import '../common/mixins';
+
+.nav {
+	margin-top: -21px;
+	margin-bottom: 18px;
+
+	.container {
+		text-align: center;
+	}
+
+	&__list {
+		@include inlineblock;
+		@include clearfix;
+	}
+
+	&__item {
+		float: left;
+		margin-left: -12px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		background: url('/img/nav-item.png') 0 0 no-repeat;
+		padding-left: 14px;
+		height: 42px;
+		display: block;
+
+		&:hover {
+			background-position: 0 -55px;
+
+			.nav__text {
+				background-position: right -55px;
+			}
+		}
+	}
+
+	&__text {
+		background: url('/img/nav-item.png') right 0 no-repeat;
+		padding-right: 14px;
+		padding-left: 8px;
+		height: 42px;
+		text-align: center;
+		line-height: 42px;
+		display: block;
+		font-size: 15px;
+		@extend %electra;
+		color: #5c7b98;
+	}
+}

@@ -1,0 +1,40 @@
+.sidebar {
+	width: 230px;
+	float: left;
+
+	&__item-trigger {
+		display: block;
+		padding: 8px 0 8px 22px;
+		font-size: 15px;
+		line-height: 17px;
+		color: $grey;
+		background: url('/img/sidebar-border.png') 0 top repeat-x #f7f7f7;
+	}
+
+	&__inner {
+		display: none;
+		
+		&-link {
+			background: url('/img/decor/tr-r.png') 3px 9px no-repeat;
+			@include inlineblock;
+			font-size: 15px;
+			line-height: 17px;
+			color: $grey;
+			padding: 6px 14px;
+		}
+
+		&-item {
+			padding-left: 20px;
+			background: url('/img/sidebar-border.png') 0 top repeat-x #f7f7f7;
+		}
+	}
+
+	&__item {
+		background: url('/img/sidebar-border.png') 0 top repeat-x #f7f7f7;
+		&:first-child {
+			.sidebar__item-trigger {
+				background-image: none;
+			}
+		}
+	}
+}

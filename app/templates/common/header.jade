@@ -1,9 +1,12 @@
-header.page-header
+header.header
 	.container
-		a.header__logo-link(href="#", alt="AppleShop")
-			img.header__logo-img(src="img/logo.png")
-		.header__phone 
-			span.header__code +7 (921) 
-			span.header__number 322 12 32
-		.header__mail
-			a(href="mailto:manager@company.com").header__mail-address manager@company.com
+		.header__logo
+			a(href="#", alt="AppleShop").header__logo-link
+				img(src="img/logo.png").header__logo-img
+
+		.header__phone
+			a(href="tel:+79213221232").header__phone-link 
+				span.header__phone-code +7 (921) 
+				span.header__phone-number 322 12 32
+		
+		a(href="mailto:manager@company.com").header__mail manager@company.com

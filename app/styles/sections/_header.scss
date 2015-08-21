@@ -1,0 +1,55 @@
+@import '../common/fonts';
+
+.header {
+	background: #dae5f0; /* Old browsers */
+	background: -moz-linear-gradient(left, #dae5f0 0%, #f0f4f9 30%, #f0f4f9 70%, #dae5f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, #dae5f0), color-stop(30%, #f0f4f9), color-stop(70%, #f0f4f9), color-stop(100%, #dae5f0));	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #dae5f0 0%, #f0f4f9 30%, #f0f4f9 70%, #dae5f0 100%);	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #dae5f0 0%, #f0f4f9 30%, #f0f4f9 70%, #dae5f0 100%);	/* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #dae5f0 0%, #f0f4f9 30%, #f0f4f9 70%, #dae5f0 100%);	/* IE10+ */
+	background: linear-gradient(to right, #dae5f0 0%, #f0f4f9 30%, #f0f4f9 70%, #dae5f0 100%);	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dae5f0', endColorstr='#dae5f0', GradientType=1);	/* IE6-9 */
+
+	.container {
+		min-height: 120px;
+	}
+}
+
+.header__logo {
+	position: absolute;
+	top: 25px;
+	left: 0;
+}
+
+.header__phone {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.header__phone-link {
+	text-decoration: none;
+}
+
+.header__phone-code {
+	@extend %electra_bold; 
+	color: #00b9fe;
+	font: 15px;
+	margin-right: 4px;
+}
+
+.header__phone-number {
+	@extend %electra;
+	font-size: 25px;
+	line-height: 27px;
+	color: #5c7b98;
+}
+
+.header__mail {
+	position: absolute;
+	right: 0;
+	top: 55px;
+	font-size: 17px;
+	line-height: 19px;
+	color: $purple;
+}

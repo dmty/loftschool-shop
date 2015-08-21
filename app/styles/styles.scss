@@ -1,7 +1,5 @@
-@import 'test';
-
-.test {
-	margin: 0;
-	padding: 0;
-	background: #fff;
-}
+@import 'common/common';
+@import 'sections/header';
+@import 'sections/nav';
+@import 'sections/control-options';
+@import 'sections/sidemenu';

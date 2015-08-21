@@ -1,0 +1,74 @@
+@import 'common/common';
+@import 'common/fonts';
+
+.content__options {
+	@include clearfix;
+
+	&-items {
+		float: right;
+		text-align: right;
+	}
+	&-select, &-paginator {
+		@include inlineblock;
+	}
+}
+
+.path {
+	float: left;
+	&__item {
+		@include inlineblock;
+
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+		&:before {
+			content: ">";
+			@include inlineblock;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		color: $blue;
+		text-decoration: underline;
+		
+		&:hover {
+			text-decoration: none;
+			color: $grey;
+		}
+	}
+}
+
+.content__paginator {
+	&-item {
+		@include inlineblock;
+		&:active {
+			.content__paginator-link {
+				color: $grey;
+				text-decoration: none;
+			}
+		}
+	}
+	&-link, &-all {
+		font-size: 15px;
+		line-height: 17px;
+		color: $blue;
+		@extend electra_light;
+		text-decoration: underline;
+		@include inlineblock;
+
+		&:hover {
+			color: $grey;
+			text-decoration: none;
+		}
+	}
+	&-list {
+		@include inlineblock;
+	}
+}
+
+.content__options-select {
+	text-align: left;
+}
