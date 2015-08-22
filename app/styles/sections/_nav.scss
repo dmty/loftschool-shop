@@ -1,5 +1,4 @@
-@import '../common/fonts';
-@import '../common/mixins';
+/* -- Navigation -- */
 
 .nav {
 	margin-top: -21px;
@@ -16,7 +15,7 @@
 
 	&__item {
 		float: left;
-		margin-left: -12px;
+		margin-left: -11px;
 
 		&:first-child {
 			margin-left: 0;
@@ -47,7 +46,7 @@
 		line-height: 42px;
 		display: block;
 		font-size: 15px;
-		@extend %electra;
-		color: #5c7b98;
+		@include electra();
+		color: $grey;
 	}
 }

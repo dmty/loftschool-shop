@@ -1,5 +1,4 @@
-@import 'common/common';
-@import 'common/fonts';
+/* -- Controls and options -- */
 
 .content__options {
 	@include clearfix;
@@ -55,7 +54,7 @@
 		font-size: 15px;
 		line-height: 17px;
 		color: $blue;
-		@extend electra_light;
+		@include electra("light");
 		text-decoration: underline;
 		@include inlineblock;
 

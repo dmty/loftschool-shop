@@ -1,10 +1,12 @@
+/* -- Sidebar --*/
+
 .sidebar {
 	width: 230px;
 	float: left;
 
 	&__item-trigger {
 		display: block;
-		padding: 8px 0 8px 22px;
+		padding: 8px 0 8px 30px;
 		font-size: 15px;
 		line-height: 17px;
 		color: $grey;
@@ -13,14 +15,15 @@
 
 	&__inner {
 		display: none;
-		
+
 		&-link {
+			padding-left: 15px;
 			background: url('/img/decor/tr-r.png') 3px 9px no-repeat;
 			@include inlineblock;
 			font-size: 15px;
 			line-height: 17px;
 			color: $grey;
-			padding: 6px 14px;
+			//padding: 6px 14px;
 		}
 
 		&-item {

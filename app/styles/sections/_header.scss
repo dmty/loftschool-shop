@@ -1,4 +1,6 @@
-@import '../common/fonts';
+@import 'common/fonts';
+
+/* -- Header -- */
 
 .header {
 	background: #dae5f0; /* Old browsers */
@@ -13,43 +15,44 @@
 	.container {
 		min-height: 120px;
 	}
-}
 
-.header__logo {
-	position: absolute;
-	top: 25px;
-	left: 0;
-}
 
-.header__phone {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
+	&__logo {
+		position: absolute;
+		top: 25px;
+		left: 0;
+	}
 
-.header__phone-link {
-	text-decoration: none;
-}
+	&__phone {
+		position: absolute;
+		right: 0;
+		top: 23px;
 
-.header__phone-code {
-	@extend %electra_bold; 
-	color: #00b9fe;
-	font: 15px;
-	margin-right: 4px;
-}
+		&-link {
+			text-decoration: none;
+		}
 
-.header__phone-number {
-	@extend %electra;
-	font-size: 25px;
-	line-height: 27px;
-	color: #5c7b98;
-}
+		&-code {
+			@include electra("bold"); 
+			color: $blue;
+			font-size: 15px;
+			margin-right: 4px;
+		}
 
-.header__mail {
-	position: absolute;
-	right: 0;
-	top: 55px;
-	font-size: 17px;
-	line-height: 19px;
-	color: $purple;
+		&-number {
+			@include electra();
+			font-size: 25px;
+			line-height: 27px;
+			color: $grey;
+		}
+	}
+
+	&__mail {
+		position: absolute;
+		right: 0;
+		top: 55px;
+		font-size: 17px;
+		line-height: 19px;
+		color: $purple;
+	}
 }

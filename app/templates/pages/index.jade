@@ -14,6 +14,8 @@ block content
 								a.path__link= title
 				.content__options-items
 					select.content_options-select
+						option Сеткой
+						option Линиями
 
 					.content__options-paginator
 						ul.content__paginator-list
@@ -25,20 +27,22 @@ block content
 		include ../common/sidemenu.jade
 
 		.content__page
-			ul.content__list
-			- for (var i = 0; i < 7; i++)
-				li.content__item
-					.content__item-inner
-						.content__pic
-							img(src='')
-						.content__text
-							.content__text-title Apple Thunderbolt Display 27"
-							.content__text-about Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес 9 кг
-			.content__about-title Пара слов о магазине
-			.content__about-text
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
-				p
-					| Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, con
-				
+			ul.content__list.content__list_horizontal
+				- for (var i = 0; i < 7; i++)
+					li.content__item
+						a.content__item-inner
+							.content__pic
+								img(src='')
+							.content__text
+								.content__text-title Apple Thunderbolt Display 27"
+								.content__text-about Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес 9 кг
+			
+			.content__about
+				.content__about-title Пара слов о магазине
+				.content__about-text
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+					p
+						| Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, con
+					
 

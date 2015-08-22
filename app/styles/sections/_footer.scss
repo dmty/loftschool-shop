@@ -1,0 +1,102 @@
+/* -- Footer -- */
+
+footer {
+	background: url('/img/footer_pattern.png') center 0 repeat $purple;
+
+	.container { 
+		min-height: $footer-height - 58px;
+		text-align: center;
+
+	}
+}
+
+.footer__logo {
+	display: block;
+	position: absolute;
+	top: 42px;
+	left: 0;
+}
+
+.footer__nav {
+	width: 485px;
+	@include inlineblock;
+	text-align: left;
+
+	&-item {
+		@include inlineblock;
+	}
+
+	&-title, &-link {
+		color: $white;
+		@include electra("bold");
+		font-size: 15px;
+		line-height: 17px;
+		margin-bottom: 5px;
+	}
+
+	&-link {
+		@include electra("light");
+		text-decoration: underline;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.footer {
+	&__appstore, &__googleplay {
+		width: 90px;
+		height: 32px;
+		background: url('/img/as.png') 0 0 no-repeat;
+		@include inlineblock;
+	}
+
+	&__googleplay {
+		background: url('/img/gp.png') 0 0 no-repeat;
+	}
+
+	&__shops {
+		margin-bottom: 28px;
+	}
+
+	&__social {
+		position: absolute;
+		top: 19px;
+		right: 0;
+
+		&-list {
+			@include clearfix;
+		}
+
+		&-item {
+			float: left;
+			margin-left: 11px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		&-link {
+			width: 44px;
+			height: 44px;
+			display: block;
+			background: url('/img/socials.png') 0 0 no-repeat;
+			opacity: 1;
+			@include transition(.2s);
+
+			&:hover {
+				opacity: .8;
+			}
+
+			&_fb {
+				background-position: -53px 0;
+			}
+
+			&_tw {
+				background-position: -104px 0;
+			}
+		}
+	}
+}

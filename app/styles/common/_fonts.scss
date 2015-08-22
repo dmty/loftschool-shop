@@ -26,15 +26,14 @@
   font-weight: normal;
   font-style: normal;
 }
-%electra {
-  font-family: 'elektra_medium_proregular';
-}
-%electra_bold {
-  font-family: 'elektra_light_probold';
-}
-%electra_italic {
-  font-family: 'elektra_medium_proitalic';
-}
-%electra_light {
-  font-family: 'elektra_light_proregular';
+@mixin electra($type: "regular") {
+  @if $type == "light" {
+    font-family: 'elektra_light_proregular';
+  } @else if $type == "bold"{
+    font-family: 'elektra_light_probold';
+  } @else if $type == "italic"{
+    font-family: 'elektra_medium_proitalic';
+  } @else {
+    font-family: 'elektra_medium_proregular';
+  };
 }
