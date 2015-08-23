@@ -23,6 +23,7 @@ gulp.task 'jade', ->
   .pipe gulp.dest parameters.web_path
   .pipe reload stream: true
 
+
 gulp.task 'sass', ->
   gulp.src parameters.styles_main_file
   .pipe sass()
