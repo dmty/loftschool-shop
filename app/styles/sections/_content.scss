@@ -1,4 +1,7 @@
 /* -- Content -- */
+.content__inner {
+	@include clearfix;
+}
 
 .content__page {
 	width: 740px;

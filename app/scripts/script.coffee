@@ -1,3 +1,0 @@
-do ->
-  console.log "Started"
-  
